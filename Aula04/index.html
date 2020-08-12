@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao CSS</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <!-- Pedaço de CSS dentro do HTML -->
+    <style>
+        p {
+            color: salmon;
+            font-size: 25px;
+            text-shadow: 1px 1px 4px black;
+        }
+
+        .Container p {
+            
+            color: indianred;
+            font-size: small;
+            font-style: italic;
+            text-shadow: none;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .Container {
+            width: 700px;
+            background-color: cornsilk;
+            margin: auto;
+            display: block;
+            border: 5px solid black;
+            border-radius: 5px;
+            padding: 5px;
+            box-shadow: 1px 1px 10px yellow;
+            line-height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aula 04 - Introdução ao CSS (<strong class="Vermelho"> Continuação </strong>)</h1>
+    <h2>CSS Significa - Cascading Style Sheet</h2>
+    <h2>Folha de Estilo em Cascata</h2>
+
+    <img id="imgPrincipal"
+        src="images/Image01.jpg"
+         alt="Logotipo Css-Html-Js"
+         height="200" />
+    <br>
+    <img class="Logo"
+        src="images/image02.webp"
+         alt="Html"
+         height="200" />
+
+    <img class="Logo"
+        src="images/Image03.png"
+         alt="Js"
+         height="200" />
+
+    <img class="Logo"
+        src="images/Image04.png"
+         alt="Css"
+         height="200" />
+    
+    <p>O empenho em analisar a crescente influência da mídia faz parte de um processo de gerenciamento do orçamento setorial.</p>
+    <p>O empenho em analisar o acompanhamento das preferências de consumo estende o alcance e a <span style="Color:tomato; font-weight:bold">importância</span> dos níveis de motivação departamental.</p>
+    <p>Todavia, a consulta aos diversos militantes auxilia a preparação e a composição das diretrizes de desenvolvimento para o futuro.</p>
+
+    <h1>Lorem Ipsum</h1>
+    <article class="Container">
+        <p>Ipsum dolor sit amet, consectetur adipiscing elit. Morbi iaculis finibus urna eu pellentesque. Ut diam orci, ultrices euismod elit id, vulputate commodo neque. Phasellus eget lorem vitae justo volutpat ornare. Nulla pharetra massa nisi, at porttitor risus tincidunt vitae. Nunc vitae varius erat, sagittis cursus turpis. In hac habitasse platea dictumst. Nulla vulputate quam ac porta faucibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam ultrices facilisis dolor non ultrices. Cras eu tortor sollicitudin, posuere mauris quis, congue urna.</p>
+
+        <p>Vivamus in nunc leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget lectus eros. Vivamus varius nunc nec nunc egestas interdum. Suspendisse malesuada eget risus sit amet cursus. Duis sollicitudin, ligula ut pretium dignissim, ligula erat feugiat eros, ac finibus elit turpis et arcu. Quisque massa est, dictum sit amet enim aliquam, iaculis placerat ex. Donec quis egestas felis. Quisque vehicula, neque id rutrum tincidunt, nunc velit elementum justo, eu iaculis orci elit sed tellus. Suspendisse potenti. Etiam convallis vel elit a pulvinar. Ut urna nisl, tempor sit amet ex non, mattis feugiat ligula. Donec rhoncus vitae orci non tristique. In quis lacus sodales, lacinia nisi in, mollis est. Duis dignissim, metus eget viverra efficitur, turpis erat varius nisi, ac maximus nunc mauris et lorem.</p>
+
+        <p>Aliquam maximus nisl eu cursus laoreet. Sed vitae sem lobortis enim rhoncus scelerisque. Maecenas id mauris pulvinar ante ornare egestas eget id metus. Vivamus sodales arcu eget libero lobortis, vel vulputate odio volutpat. Curabitur interdum augue ut consequat suscipit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan vel ipsum id gravida. Donec rutrum nisl a nibh consequat fringilla. In hac habitasse platea dictumst. Aliquam tempor interdum odio et egestas. Phasellus sed cursus enim. Proin cursus, libero faucibus suscipit sodales, arcu lacus scelerisque felis, rhoncus faucibus nulla turpis gravida orci.</p>
+    </article>
+    
+</body>
+</html>

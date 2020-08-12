@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemonada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body {
+    background-color: slateblue; /* Cor de Fundo*/
+    color: firebrick; /* Cor do Texto */
+    text-shadow: 2px 2px 5px black; /* Sombra do Texto */
+}
+
+h1 {
+    color: firebrick; /* Cor do Texto */
+    font-family: 'Lobster', cursive; /* Fonte do Texto */
+    font-size: 400%; /* Tamanho do Texto */
+    text-align: center; /* Centraliza o Texto no Meio da Tela */
+}
+
+h2 {
+    color: darkred;
+    font-family: 'lemonada', cursive;
+    font-size: 150%;
+    text-align: center;
+}
+/* Identificador usa-se o "#" */
+img#imgPrincipal {
+    display: block; /* Centraliza a Imagem */
+    margin: auto; /* Centraliza a Imagem */
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px black;
+}
+
+/* Classe usa-se o "." */
+img.Logo {
+    height: 200px;
+    width: 200px;
+    margin-left: 325px;
+    border-radius: 50%;
+    margin-top: 30px;
+    transition: 0.5s;
+}
+
+img.Logo:hover {
+    /* Hover = Ativado quando o Mouse passa em cima */
+    box-shadow: 1px 1px 10px white;
+}
+
+strong.Vermelho {
+    color: red;
+}
