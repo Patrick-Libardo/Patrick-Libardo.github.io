@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout CSS</title>
+    <style>
+        h1,h2 {
+            text-align: center;
+        }
+        p {
+            width: 400px;
+            margin: 0 auto;
+        }
+        .border1 {
+            text-align: center;
+            border-width: 5px;
+            border-style: double;
+            border-color: mediumturquoise;
+            border-bottom-right-radius: 15px;
+            border-top-left-radius: 15px;
+        }
+        #gatinho {
+            border: 3px solid black;
+            border-radius: 100%;
+            width: 300px;
+            height: 300px;
+            box-shadow: 4px 4px 10px slateblue;
+            margin: 0 auto;
+            display: block;
+        }
+        .padding {
+            border: 5px solid black;
+            width: fit-content;
+            padding-top: 30px;
+            padding-left: 30px;
+            padding-bottom: 30px;
+            padding-right: 30px;
+        }
+        #mrg {
+            border: 3px dotted springgreen;
+            padding: 20px;
+            outline: 3px solid green;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        .parent {
+            width: 200px;
+            box-sizing: border-box;
+            border: 5px solid #7c8e88;
+            margin: 0 auto;
+            display: block;
+        }
+       .child {
+            box-sizing: content-box;
+            box-sizing: border-box;
+            border: 10px solid #d74f25;
+            padding: 10px;
+            width: 100%;
+        }
+       .pai {
+            box-sizing: border-box;
+            width: 200px;
+            border: 5px dashed gray;           
+            margin: 0 auto;
+            display: block;
+            margin-bottom: 30px;
+        }
+       .filho {
+            box-sizing: content-box;
+            box-sizing: border-box;
+            border: 10px dashed tomato;
+            padding: 10px;
+            width: 100%;
+        }
+        .floatCachorrinho1 {
+            float: left;
+            width: 200px;
+            margin-right: 20px;
+        }
+        .floatCachorrinho2 {
+            float: right;
+            width: 200px;
+            margin-left: 20px;
+        }
+        .flex-pai {
+            display: flex;
+        }
+        .flex-filho {
+            border: 5px dotted deepskyblue;
+            background-color: greenyellow;
+            color: navy;
+            text-align: center;
+            margin: 5px;
+            cursor: pointer;
+        }
+        .flex-filho:hover {
+            background-color: springgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1><a href=https://frontendmasters.github.io/bootcamp/layout  target="blank"> <!-- Põe um Link no Texto -->
+        Aula05 - Layout Web
+    </a></h1>
+
+    <p class="border1">
+        Aprendizagem Industrial Programador de Computador - AIPR
+        <br> SENAI - SC
+    </p>
+
+    <h2>Exemplo de Imagem Circular</h2>
+    <img id="gatinho" src="https://placekitten.com/g/100/100">
+
+    <h2>Padding - Preenchimento</h2>
+    <p class="padding">
+        <!-- Tag "pre" para elementos pré-formados, mantém o formato -->
+        padding-top <br>
+        padding-right <br>
+        padding-bottom <br>
+        padding-left <br>
+    </p>
+
+    <h2>Margin - Margem</h2>
+    <p id="mrg">
+        Mussum Ipsum, cacilds vidis litro abertis. Sapien in monti palavris qui num significa nadis i pareci latim.
+        Mauris nec dolor in eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl. Quem manda na minha terra sou euzis! Pra lá , 
+        depois divoltis porris, paradis. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Suco de cevadiss deixa as pessoas mais interessantis. 
+        Cevadis im ampola pa arma uma pindureta. Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo!
+    </p>
+
+    <h2>Tamanho da Caixa</h2>
+    
+    <section class="pai">
+        <p>Elemento Pai</p>
+        <section class="filho">
+            Elemento Filho
+        </section>
+    </section>
+
+    <section class="parent">
+        <p>Parent Element</p>
+        <section class="child">
+            Child Element
+        </section>
+    </section>
+
+    <h2>Flutuação</h2>
+    <p>
+        <img src="https://m.bonde.com.br/img/bondenews/2019/12/img_1_75_1491.webp" class="floatCachorrinho1">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dictum ex eget elit vestibulum tempor. Sed et magna mi. 
+        Morbi bibendum augue ac odio tincidunt sagittis. Vivamus sodales non urna id lacinia. Mauris non mi pharetra, feugiat sem vel, lobortis lorem. 
+    </p>
+    <br>
+    <p>       
+        <img src="https://catiororeflexivo.com/wp-content/uploads/2019/11/tiniest-cavalier-puppy-nessa-1-5dd542032dfde__700.jpg" class="floatCachorrinho2">
+        Duis mollis neque feugiat, euismod risus vitae, varius ex. Quisque porta libero non dui porttitor consequat. 
+        Integer vel tellus maximus, lobortis felis in, semper nisl.
+        Proin in urna quam. Nulla ac dignissim nisl, in faucibus est. Nam iaculis lectus sit amet enim commodo volutpat.       
+    </p>
+
+    <h2>FlexBox</h2>
+    <section class="flex-pai">
+        <p class="flex-filho">1</p>
+        <p class="flex-filho">2</p>
+        <p class="flex-filho">3</p>
+        <p class="flex-filho">4</p>
+        <p class="flex-filho">5</p>
+        <p class="flex-filho">6</p>
+    </section>
+</body>
+</html>
