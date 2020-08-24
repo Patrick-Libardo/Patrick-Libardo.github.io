@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+
+body {
+    background-color: ghostwhite;
+}
+
+div {
+    margin: 20px auto;
+    border: 1px solid black;
+    background-color: ghostwhite;
+    width: 500px;
+    border-radius: 5px;
+}
+
+header {
+    background-color: azure;
+    border: 3px groove black;
+    border-radius: 10px;
+    margin: 20px auto;
+    text-align: center;
+    width: 400px;
+    box-shadow: 5px 5px 8px lightblue;
+}
+
+header h1 {
+    font-family: 'Balsamiq Sans', cursive;
+    color: darkred;
+}
+
+main {
+    margin: 0 auto;
+    display: block;
+}
+
+button {
+    width: 20%;
+    height: 70px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 30pt;
+    text-align: center;
+    font-family: 'Chewy', cursive;
+}
+
+button:hover {
+    background: linear-gradient(to bottom left, green, limegreen);
+    box-shadow: 1px 1px 10px black;
+    transition: 0.1s;
+}
+
+button#ce {
+    background: linear-gradient(to bottom left, red, firebrick);
+}
+
+button#igualdade {
+    background: linear-gradient(to bottom left, royalblue, lightblue);
+    width: 45%;
+    margin-left: 51.5%;
+}
+
+#display {
+    margin: 0 auto;
+    display: block;
+    width: 80%;
+    height: 50px;
+    border-radius: 3px;
+    font-size: 30pt;
+    padding: 6px 20px 6px 20px;
+    font-family: 'Chewy', cursive;
+}
+
+p#nome {
+    margin: auto;
+    display: ruby;
+    margin-top: 10%;
+    text-align: center;
+    font-family: 'Chewy', cursive;
+    border: 3px solid black;
+    width: 200px;
+    border-radius: 10px;
+}
+
+p#nome:hover {
+    box-shadow: 3px 3px 7px springgreen;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+

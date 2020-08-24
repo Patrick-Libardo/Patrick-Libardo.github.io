@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>calculadora</title>
+</head>
+<body>
+    <div>
+    <header>
+        <h1>Calculadora</h1>
+    </header>
+
+    <main class="containe">
+        <input type="text" name="" id="display" autofocus tabindex="1">
+
+        <p>
+        <button type="submit" onclick = "pressNum(this)">1</button> 
+        <button type="submit" onclick = "pressNum(this)">2</button>        
+        <button type="submit" onclick = "pressNum(this)">3</button>
+        <button type="submit" id = "ce" onclick = "limparTudo()">CE</button> <br>
+        <button type="submit" onclick = "pressNum(this)">4</button> 
+        <button type="submit" onclick = "pressNum(this)">5</button>
+        <button type="submit" onclick = "pressNum(this)">6</button>
+        <button type="submit" onclick = "pressOperador(this)"> * </button> <br>
+        <button type="submit" onclick = "pressNum(this)">7</button> 
+        <button type="submit" onclick = "pressNum(this)">8</button>        
+        <button type="submit" onclick = "pressNum(this)">9</button>
+        <button type="submit" onclick = "pressOperador(this)"> - </button> <br>
+        <button type="submit" onclick = "pressNum(this)">.</button>
+        <button type="submit" onclick = "pressNum(this)">0</button> 
+        <button type="submit" onclick = "pressOperador(this)"> + </button>               
+        <button type="submit" onclick = "pressOperador(this)"> / </button>
+
+        <button type="submit" id = "igualdade" onclick = "pressEqual()">=</button>
+        </p>        
+    </main>
+    </div>
+    <p id="nome"><a href="https://www.instagram.com/patrick.libardo/" target="blank">
+        Patrick Libardo ♡
+    </p>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
