@@ -1,0 +1,71 @@
+body {
+    background-color: black;
+    color: lime;
+}
+
+li a, footer h2 a {
+    color: cyan;
+}
+
+li a:hover, footer h2 a:hover {
+    color: yellowgreen;
+}
+
+li a:active, footer h2 a:active {
+    color: yellow;
+}
+
+footer h2 a {
+    border-style: 2px ridge beige;
+    background-color: lightblue;
+    color: brown;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+footer h2 a:hover {
+    border: 2px ridge lightblue;
+    background-color: beige;
+    color: brown;
+}
+
+footer h2 a:active {
+    background-color: white;
+    box-shadow: 1px 1px 3px lime;
+}
+
+footer h2 a:link {
+    text-decoration: none;
+}
+
+table#tabela1 {
+    border: 2px solid dimgray;
+    border-collapse: collapse; /* Juntar as Linhas da Borda */
+    background-color: slategrey;
+}
+
+#tabela1 td {
+    border: 1px dashed greenyellow;
+    padding: 10px;
+}
+
+#tabela1 tr:nth-child(even) { /* tr's pares com Fundo diferente */
+    background-color: grey;
+}
+
+#tabela2 {
+    text-align: center;
+    color: black;
+    background-color: white;
+    width: 420px;
+}
+
+#tabela2 td, #tabela2 th {
+    border: 1px solid black;
+    padding: 7px;
+    height: 30px;
+}
+
+#tabela2 th {
+    background-color: deepskyblue;
+}
