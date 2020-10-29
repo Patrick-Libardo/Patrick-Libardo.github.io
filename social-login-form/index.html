@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/estilo.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Social Login Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <form action="/action_page.php">
+        <div class="row">
+          <h2 style="text-align: center">
+            Login com mídia social ou manualmente
+          </h2>
+          <div class="vl">
+            <span class="vl-innertext">ou</span>
+          </div>
+
+          <div class="col">
+            <a href="https://www.facebook.com/login" target="_blank" class="fb btn">
+              <i class="fa fa-facebook fa-fw"></i> Entrar com o Facebook
+            </a>
+            <a href="https://www.twitter.com/login" target="_blank" class="twitter btn">
+              <i class="fa fa-twitter fa-fw"></i> Entrar com o Twitter
+            </a>
+            <a href="https://accounts.google.com/login" target="_blank" class="google btn">
+              <i class="fa fa-google fa-fw"></i> Entrar com o Google+
+            </a>
+          </div>
+
+          <div class="col">
+            <div class="hide-md-lg">
+              <p>Ou faça login manualmente:</p>
+            </div>
+
+            <input
+              type="text"
+              name="nome do usuário"
+              placeholder="Nome do Usuário"
+              required
+            />
+            <input type="password" name="senha" placeholder="Senha" required />
+            <input type="submit" value="Entrar" />
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="bottom-container">
+      <div class="row">
+        <div class="col">
+          <a href="#" style="color: white" class="btn">inscrever-se</a>
+        </div>
+        <div class="col">
+          <a href="#" style="color: white" class="btn">Esqueceu sua senha?</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
